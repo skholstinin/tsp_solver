@@ -7,6 +7,15 @@ public class City {
     private int x;
     private int y;
 
+    @Override
+    public String toString() {
+        return "City{" +
+                "id=" + id +
+                ", x=" + x +
+                ", y=" + y +
+                '}';
+    }
+
     public City(int id) {
         this.id = id;
         this.x = getRandomNumberInRange(0, 1000);
